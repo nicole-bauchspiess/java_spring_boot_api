@@ -13,16 +13,16 @@ import com.example.course.repositories.OrderRepository;
 public class OrderService {
 
 	@Autowired
-	private OrderRepository oRepository;
+	private OrderRepository repository;
 	
 	
 	public List<Order> findAll(){
-		return oRepository.findAll();
+		return repository.findAll();
 		
 	}
 	
 	public Order findById(Long id) {
-		Optional<Order> obj = oRepository.findById(id);
+		Optional<Order> obj = repository.findById(id);
 		return obj.get();
 	}
 	
