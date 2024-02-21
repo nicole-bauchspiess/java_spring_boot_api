@@ -1,10 +1,13 @@
 Projeto Web Service com Spring Boot, JPA/Hibernate 
 
-Tecnologias utilizadas:
+Ferramentas utilizadas:
 -JAVA 17 
 -Spring Boot 4.21
 -BVanco de dados de teste H2
--JPA/Hibernate 
+-JPA/Hibernate
+-Postman
+-Apache Tomcat
+-Maven
 
 Objetivo:
 -Criar projeto Spring Boot Java
@@ -14,3 +17,4 @@ Objetivo:
 -Povoar o banco de dados 
 -CRUD - Create, Retrieve, Update, Delete
 -Tratamento de exceções
+
