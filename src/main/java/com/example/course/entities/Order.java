@@ -56,13 +56,7 @@ public class Order implements Serializable {
 
 	
 	
-	public Payment getPayment() {
-		return payment;
-	}
 
-	public void setPayment(Payment payment) {
-		this.payment = payment;
-	}
 
 	public Set<OrderItem> getItem(){
 		return items;
@@ -97,6 +91,14 @@ public class Order implements Serializable {
 		return id;
 	}
 
+	public Payment getPayment() {
+		return payment;
+	}
+
+	public void setPayment(Payment payment) {
+		this.payment = payment;
+	}
+	
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
@@ -112,6 +114,14 @@ public class Order implements Serializable {
 			return false;
 		Order other = (Order) obj;
 		return Objects.equals(id, other.id);
+	}
+	
+	public Double getTotal() {
+		Double soma  = 0.0;
+		for(OrderItem oi: items) {
+			soma += oi.getSubTotal();
+		}
+		return soma;
 	}
 
 }
