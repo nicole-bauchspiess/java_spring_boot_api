@@ -2,8 +2,8 @@ Projeto Web Service com Spring Boot, JPA/Hibernate
 
 Ferramentas utilizadas:
 -JAVA 17 
--Spring Boot 4.21
--BVanco de dados de teste H2
+-Spring Boot 3.3
+-Banco de dados de teste H2
 -JPA/Hibernate
 -Postman
 -Apache Tomcat
@@ -15,6 +15,6 @@ Objetivo:
 -Estruturar camadas lógicas: resource, service, repository
 -Configurar banco de dados de teste (H2)
 -Povoar o banco de dados 
--CRUD - Create, Retrieve, Update, Delete
+-CRUD - Create, Read, Update, Delete
 -Tratamento de exceções
 
